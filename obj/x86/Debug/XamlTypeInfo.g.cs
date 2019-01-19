@@ -214,7 +214,7 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[38];
-            _typeNameTable[0] = "IPM_Proj.BlankPage1";
+            _typeNameTable[0] = "IPM_Proj.HistoryPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid";
@@ -254,7 +254,7 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             _typeNameTable[37] = "Single";
 
             _typeTable = new global::System.Type[38];
-            _typeTable[0] = typeof(global::IPM_Proj.BlankPage1);
+            _typeTable[0] = typeof(global::IPM_Proj.HistoryPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid);
@@ -326,7 +326,7 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BlankPage1() { return new global::IPM_Proj.BlankPage1(); }
+        private object Activate_0_HistoryPage() { return new global::IPM_Proj.HistoryPage(); }
         private object Activate_3_DataGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid(); }
         private object Activate_22_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
         private object Activate_23_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
@@ -383,9 +383,9 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  IPM_Proj.BlankPage1
+            case 0:   //  IPM_Proj.HistoryPage
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_BlankPage1;
+                userType.Activator = Activate_0_HistoryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

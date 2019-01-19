@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -20,11 +21,26 @@ namespace IPM_Proj
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class HistoryPage : Page
     {
-        public BlankPage1()
+        Rate rateToDisplay;
+        public HistoryPage()
         {
             this.InitializeComponent();
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            rateToDisplay = (Rate)e.Parameter;
+
+            Debug.WriteLine(rateToDisplay.Currency);
+            // parameters.Name
+            // parameters.Text
+            // ...
+        }
     }
+
+
 }

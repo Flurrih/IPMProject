@@ -13,7 +13,7 @@
 
 
         <Grid Margin="10,10,10,10">
-            <Custom:DataGrid x:ConnectionId='2' x:Name="CurrencyGrid"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="782" Width="562"                                          />
+            <Custom:DataGrid x:ConnectionId='2' x:Name="currencyGridUWP"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="782" Width="562"                                          />
         </Grid>
 
     </Grid>

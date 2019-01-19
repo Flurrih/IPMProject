@@ -11,7 +11,7 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="IPM_Proj.BlankPage1" />
+    <RootType FullName="IPM_Proj.HistoryPage" />
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

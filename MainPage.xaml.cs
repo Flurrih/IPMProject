@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.UI.Controls;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -35,8 +36,17 @@ namespace IPM_Proj
         public MainPage()
         {
             this.InitializeComponent();
+            //currencyGridUWP;
+            currencyGridUWP.SelectedItem = null;
+            currencyGridUWP.SelectionChanged += currencyGridUWP_CellSelected;
         }
 
+
+        private void currencyGridUWP_CellSelected(object sender, SelectionChangedEventArgs e)
+        {
+            Debug.Write(((Rate)e.AddedItems[0]).Currency);
+            this.Frame.Navigate(typeof(HistoryPage), ((Rate)e.AddedItems[0]));
+        }
 
     }
 }
