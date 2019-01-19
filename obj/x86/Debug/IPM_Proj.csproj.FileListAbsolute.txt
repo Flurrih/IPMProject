@@ -221,3 +221,8 @@ C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\bin\x86\Debug\Microsoft.Toolkit.
 C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\en-US\Microsoft.Toolkit.Uwp.UI.Controls.Properties.Resources.resw
 C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\IPM_Proj.csproj.GenerateResource.Cache
 C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.pri.xml
+C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\bin\x86\Debug\HistoryPage.xbf
+C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\HistoryPage.g.i.cs
+C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\HistoryPage.g.cs
+C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\HistoryPage.xaml
+C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\obj\x86\Debug\HistoryPage.xbf

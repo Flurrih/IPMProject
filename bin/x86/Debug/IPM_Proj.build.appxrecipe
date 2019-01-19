@@ -409,6 +409,9 @@
     <AppxPackagedFile Include="C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\bin\x86\Debug\HistoryPage.xbf">
+      <PackagePath>HistoryPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flurrih\source\repos\IPM_Proj\IPM_Proj\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
