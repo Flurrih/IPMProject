@@ -213,7 +213,7 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[37];
+            _typeNameTable = new string[33];
             _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Control";
             _typeNameTable[2] = "System.Collections.IEnumerable";
@@ -247,12 +247,8 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             _typeNameTable[30] = "IPM_Proj.MainPage";
             _typeNameTable[31] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[32] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[33] = "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>";
-            _typeNameTable[34] = "System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>";
-            _typeNameTable[35] = "IPM_Proj.Rate";
-            _typeNameTable[36] = "Single";
 
-            _typeTable = new global::System.Type[37];
+            _typeTable = new global::System.Type[33];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Control);
             _typeTable[2] = typeof(global::System.Collections.IEnumerable);
@@ -286,10 +282,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             _typeTable[30] = typeof(global::IPM_Proj.MainPage);
             _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[33] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>);
-            _typeTable[35] = typeof(global::IPM_Proj.Rate);
-            _typeTable[36] = typeof(global::System.Single);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -330,9 +322,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
         private object Activate_27_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
         private object Activate_28_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
         private object Activate_30_MainPage() { return new global::IPM_Proj.MainPage(); }
-        private object Activate_33_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>(); }
-        private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>(); }
-        private object Activate_35_Rate() { return new global::IPM_Proj.Rate(); }
         private void VectorAdd_19_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>)instance;
@@ -355,18 +344,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
             var newItem = (global::Windows.UI.Xaml.Style)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_33_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.Rate>)instance;
-            var newItem = (global::IPM_Proj.Rate)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_34_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.Rate>)instance;
-            var newItem = (global::IPM_Proj.Rate)item;
             collection.Add(newItem);
         }
 
@@ -612,7 +589,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             case 30:   //  IPM_Proj.MainPage
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_30_MainPage;
-                userType.AddMemberName("CurrencyCollection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -622,34 +598,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 break;
 
             case 32:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 33:   //  System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>
-                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>"));
-                userType.CollectionAdd = VectorAdd_33_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 34:   //  System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>
-                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_34_Collection;
-                userType.CollectionAdd = VectorAdd_34_Collection;
-                xamlType = userType;
-                break;
-
-            case 35:   //  IPM_Proj.Rate
-                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_Rate;
-                userType.AddMemberName("Currency");
-                userType.AddMemberName("Code");
-                userType.AddMemberName("Mid");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 36:   //  Single
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -1296,46 +1244,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid)instance;
             return that.SelectedItems;
         }
-        private object get_62_MainPage_CurrencyCollection(object instance)
-        {
-            var that = (global::IPM_Proj.MainPage)instance;
-            return that.CurrencyCollection;
-        }
-        private void set_62_MainPage_CurrencyCollection(object instance, object Value)
-        {
-            var that = (global::IPM_Proj.MainPage)instance;
-            that.CurrencyCollection = (global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>)Value;
-        }
-        private object get_63_Rate_Currency(object instance)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            return that.Currency;
-        }
-        private void set_63_Rate_Currency(object instance, object Value)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            that.Currency = (global::System.String)Value;
-        }
-        private object get_64_Rate_Code(object instance)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            return that.Code;
-        }
-        private void set_64_Rate_Code(object instance, object Value)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            that.Code = (global::System.String)Value;
-        }
-        private object get_65_Rate_Mid(object instance)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            return that.Mid;
-        }
-        private void set_65_Rate_Mid(object instance, object Value)
-        {
-            var that = (global::IPM_Proj.Rate)instance;
-            that.Mid = (global::System.Single)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -1753,30 +1661,6 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "SelectedItems", "System.Collections.IList");
                 xamlMember.Getter = get_61_DataGrid_SelectedItems;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "IPM_Proj.MainPage.CurrencyCollection":
-                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.MainPage");
-                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "CurrencyCollection", "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>");
-                xamlMember.Getter = get_62_MainPage_CurrencyCollection;
-                xamlMember.Setter = set_62_MainPage_CurrencyCollection;
-                break;
-            case "IPM_Proj.Rate.Currency":
-                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
-                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Currency", "String");
-                xamlMember.Getter = get_63_Rate_Currency;
-                xamlMember.Setter = set_63_Rate_Currency;
-                break;
-            case "IPM_Proj.Rate.Code":
-                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
-                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Code", "String");
-                xamlMember.Getter = get_64_Rate_Code;
-                xamlMember.Setter = set_64_Rate_Code;
-                break;
-            case "IPM_Proj.Rate.Mid":
-                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
-                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Mid", "Single");
-                xamlMember.Getter = get_65_Rate_Mid;
-                xamlMember.Setter = set_65_Rate_Mid;
                 break;
             }
             return xamlMember;

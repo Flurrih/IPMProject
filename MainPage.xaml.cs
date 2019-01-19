@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -27,37 +28,16 @@ namespace IPM_Proj
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private  ObservableCollection<Rate> currencyCollection;
+
+        public ObservableCollection<Rate> CurrencyCollection { get => RatesViewModel.CurrencyRates(); set => currencyCollection = value; }
         public MainPage()
         {
             this.InitializeComponent();
 
-            string nbp = "http://api.nbp.pl/api/exchangerates/tables/a/?format=xml";
-            string xml;
-
-            Debug.WriteLine("Downloading...");
-
-            xml = GetPageData(nbp);
-
-            Debug.WriteLine(xml);
 
 
-            ////////
-            ///
-            //IEnumerable<Rate> rates = from customers in
-            //                        XDocument.Parse(xml)
-            //                                  .Descendants("Rate")
-            //                            select customers.Element("Currency").Value;
-            XDocument doc = XDocument.Parse(xml);
-            IEnumerable<Rate> rates = from r in
-                                       doc.Descendants("Rate")
-                                      select new Rate()
-                                      {
-                                          Currency = (string)r.Element("Currency"),
-                                          Code = (string)r.Element("Code"),
-                                          Mid = (float)r.Element("Mid")
-                                      };
-
-            foreach (Rate rr in rates)
+            foreach (Rate rr in RatesViewModel.CurrencyRates())
             {
                 Debug.WriteLine(rr.Currency + rr.Code + rr.Mid);
             }
@@ -70,24 +50,24 @@ namespace IPM_Proj
 
         }
 
-        public string GetPageData(string link)
-        {
-            HttpClient _client = new HttpClient() { Timeout = TimeSpan.FromSeconds(200) };
-            HttpRequestMessage _request = new HttpRequestMessage(HttpMethod.Get, link);
-            _request.Headers.Add("User-Agent", "Chrome/21.0.1180.89");
-            _request.Headers.Add("Accept", "text/html");
 
-
-            var readTask = _client.GetStringAsync(link);
-            readTask.Wait();
-            return readTask.Result;
-        }
     }
 
-    class Rate
+    public class Rate
     {
         public string Currency { get; set; }
         public string Code { get; set; }
         public float Mid { get; set; }
+    }
+
+    public class RatesVM
+    {
+        public RatesVM()
+        {
+        }
+
+        private static ObservableCollection<Rate> currencyCollection;
+
+        public static ObservableCollection<Rate> CurrencyCollection { get => RatesViewModel.CurrencyRates(); set => currencyCollection = value; }
     }
 }

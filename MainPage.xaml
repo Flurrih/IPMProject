@@ -11,7 +11,7 @@
 
     <Grid>
 
-        <Custom:DataGrid HorizontalAlignment="Left" Margin="50,182,0,0" VerticalAlignment="Top" Height="764" Width="610"/>
+        <Custom:DataGrid x:Name="CurrencyGrid" HorizontalAlignment="Left" Margin="50,182,0,0" VerticalAlignment="Top" Height="764" Width="610" ItemsSource="{x:Bind CurrencyCollection}"/>
 
     </Grid>
 </Page>
