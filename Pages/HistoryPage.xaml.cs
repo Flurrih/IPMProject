@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -23,6 +24,11 @@ namespace IPM_Proj
     /// </summary>
     public sealed partial class HistoryPage : Page
     {
+
+        private ObservableCollection<HistoryRate> historyCurrencyCollection;
+
+        public ObservableCollection<HistoryRate> HistoryCurrencyCollection { get => HistoryRatesViewModel.HistoryCurrencyRates(); set => historyCurrencyCollection = value; }
+
         Rate rateToDisplay;
         public HistoryPage()
         {
@@ -35,10 +41,17 @@ namespace IPM_Proj
 
             rateToDisplay = (Rate)e.Parameter;
 
-            Debug.WriteLine(rateToDisplay.Currency);
+            HistoryRatesViewModel.RateToDisplay = rateToDisplay;
+
+            historyCurrencyNameUWP.Text = HistoryRatesViewModel.getCurrencyName();
             // parameters.Name
             // parameters.Text
             // ...
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

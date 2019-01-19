@@ -213,85 +213,95 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[38];
-            _typeNameTable[0] = "IPM_Proj.HistoryPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[5] = "System.Collections.IEnumerable";
-            _typeNameTable[6] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[7] = "Boolean";
-            _typeNameTable[8] = "Windows.UI.Xaml.Style";
-            _typeNameTable[9] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode";
-            _typeNameTable[10] = "System.Enum";
-            _typeNameTable[11] = "System.ValueType";
-            _typeNameTable[12] = "Object";
-            _typeNameTable[13] = "Double";
-            _typeNameTable[14] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength";
-            _typeNameTable[15] = "Int32";
-            _typeNameTable[16] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility";
-            _typeNameTable[17] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility";
-            _typeNameTable[18] = "Windows.UI.Xaml.Controls.ScrollBarVisibility";
-            _typeNameTable[19] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[20] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode";
-            _typeNameTable[21] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode";
-            _typeNameTable[22] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>";
-            _typeNameTable[23] = "System.Collections.ObjectModel.Collection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>";
-            _typeNameTable[24] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn";
-            _typeNameTable[25] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[26] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[27] = "System.Nullable`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>";
-            _typeNameTable[28] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[29] = "String";
-            _typeNameTable[30] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[31] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[32] = "System.Collections.IList";
-            _typeNameTable[33] = "IPM_Proj.MainPage";
-            _typeNameTable[34] = "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>";
-            _typeNameTable[35] = "System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>";
-            _typeNameTable[36] = "IPM_Proj.Rate";
-            _typeNameTable[37] = "Single";
+            _typeNameTable = new string[43];
+            _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[2] = "System.Collections.IEnumerable";
+            _typeNameTable[3] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[4] = "Boolean";
+            _typeNameTable[5] = "Windows.UI.Xaml.Style";
+            _typeNameTable[6] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode";
+            _typeNameTable[7] = "System.Enum";
+            _typeNameTable[8] = "System.ValueType";
+            _typeNameTable[9] = "Object";
+            _typeNameTable[10] = "Double";
+            _typeNameTable[11] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength";
+            _typeNameTable[12] = "Int32";
+            _typeNameTable[13] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility";
+            _typeNameTable[14] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.ScrollBarVisibility";
+            _typeNameTable[16] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[17] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode";
+            _typeNameTable[18] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode";
+            _typeNameTable[19] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>";
+            _typeNameTable[20] = "System.Collections.ObjectModel.Collection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>";
+            _typeNameTable[21] = "Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn";
+            _typeNameTable[22] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[23] = "Windows.UI.Xaml.Data.Binding";
+            _typeNameTable[24] = "System.Nullable`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>";
+            _typeNameTable[25] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[26] = "String";
+            _typeNameTable[27] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>";
+            _typeNameTable[28] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>";
+            _typeNameTable[29] = "System.Collections.IList";
+            _typeNameTable[30] = "IPM_Proj.HistoryPage";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[32] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[33] = "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.HistoryRate>";
+            _typeNameTable[34] = "System.Collections.ObjectModel.Collection`1<IPM_Proj.HistoryRate>";
+            _typeNameTable[35] = "IPM_Proj.HistoryRate";
+            _typeNameTable[36] = "Single";
+            _typeNameTable[37] = "IPM_Proj.MainPage";
+            _typeNameTable[38] = "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>";
+            _typeNameTable[39] = "System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>";
+            _typeNameTable[40] = "IPM_Proj.Rate";
+            _typeNameTable[41] = "System.Collections.ObjectModel.ObservableCollection`1<String>";
+            _typeNameTable[42] = "System.Collections.ObjectModel.Collection`1<String>";
 
-            _typeTable = new global::System.Type[38];
-            _typeTable[0] = typeof(global::IPM_Proj.HistoryPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[5] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[7] = typeof(global::System.Boolean);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[9] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode);
-            _typeTable[10] = typeof(global::System.Enum);
-            _typeTable[11] = typeof(global::System.ValueType);
-            _typeTable[12] = typeof(global::System.Object);
-            _typeTable[13] = typeof(global::System.Double);
-            _typeTable[14] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength);
-            _typeTable[15] = typeof(global::System.Int32);
-            _typeTable[16] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility);
-            _typeTable[17] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility);
-            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.ScrollBarVisibility);
-            _typeTable[19] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[20] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode);
-            _typeTable[21] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode);
-            _typeTable[22] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>);
-            _typeTable[23] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>);
-            _typeTable[24] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn);
-            _typeTable[25] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[26] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[27] = typeof(global::System.Nullable<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[29] = typeof(global::System.String);
-            _typeTable[30] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>);
-            _typeTable[31] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>);
-            _typeTable[32] = typeof(global::System.Collections.IList);
-            _typeTable[33] = typeof(global::IPM_Proj.MainPage);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>);
-            _typeTable[35] = typeof(global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>);
-            _typeTable[36] = typeof(global::IPM_Proj.Rate);
-            _typeTable[37] = typeof(global::System.Single);
+            _typeTable = new global::System.Type[43];
+            _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[2] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[4] = typeof(global::System.Boolean);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[6] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode);
+            _typeTable[7] = typeof(global::System.Enum);
+            _typeTable[8] = typeof(global::System.ValueType);
+            _typeTable[9] = typeof(global::System.Object);
+            _typeTable[10] = typeof(global::System.Double);
+            _typeTable[11] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength);
+            _typeTable[12] = typeof(global::System.Int32);
+            _typeTable[13] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility);
+            _typeTable[14] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.ScrollBarVisibility);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[17] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode);
+            _typeTable[18] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode);
+            _typeTable[19] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>);
+            _typeTable[20] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>);
+            _typeTable[21] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[23] = typeof(global::Windows.UI.Xaml.Data.Binding);
+            _typeTable[24] = typeof(global::System.Nullable<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[26] = typeof(global::System.String);
+            _typeTable[27] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>);
+            _typeTable[28] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>);
+            _typeTable[29] = typeof(global::System.Collections.IList);
+            _typeTable[30] = typeof(global::IPM_Proj.HistoryPage);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[33] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.HistoryRate>);
+            _typeTable[34] = typeof(global::System.Collections.ObjectModel.Collection<global::IPM_Proj.HistoryRate>);
+            _typeTable[35] = typeof(global::IPM_Proj.HistoryRate);
+            _typeTable[36] = typeof(global::System.Single);
+            _typeTable[37] = typeof(global::IPM_Proj.MainPage);
+            _typeTable[38] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>);
+            _typeTable[39] = typeof(global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>);
+            _typeTable[40] = typeof(global::IPM_Proj.Rate);
+            _typeTable[41] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.String>);
+            _typeTable[42] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -326,50 +336,79 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_HistoryPage() { return new global::IPM_Proj.HistoryPage(); }
-        private object Activate_3_DataGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid(); }
-        private object Activate_22_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
-        private object Activate_23_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
-        private object Activate_30_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_31_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_33_MainPage() { return new global::IPM_Proj.MainPage(); }
-        private object Activate_34_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>(); }
-        private object Activate_35_Collection() { return new global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>(); }
-        private object Activate_36_Rate() { return new global::IPM_Proj.Rate(); }
-        private void VectorAdd_22_ObservableCollection(object instance, object item)
+        private object Activate_0_DataGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid(); }
+        private object Activate_19_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
+        private object Activate_20_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>(); }
+        private object Activate_27_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
+        private object Activate_28_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
+        private object Activate_30_HistoryPage() { return new global::IPM_Proj.HistoryPage(); }
+        private object Activate_33_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.HistoryRate>(); }
+        private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::IPM_Proj.HistoryRate>(); }
+        private object Activate_35_HistoryRate() { return new global::IPM_Proj.HistoryRate(); }
+        private object Activate_37_MainPage() { return new global::IPM_Proj.MainPage(); }
+        private object Activate_38_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>(); }
+        private object Activate_39_Collection() { return new global::System.Collections.ObjectModel.Collection<global::IPM_Proj.Rate>(); }
+        private object Activate_40_Rate() { return new global::IPM_Proj.Rate(); }
+        private object Activate_41_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
+        private object Activate_42_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
+        private void VectorAdd_19_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>)instance;
             var newItem = (global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_23_Collection(object instance, object item)
+        private void VectorAdd_20_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>)instance;
             var newItem = (global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_30_ObservableCollection(object instance, object item)
+        private void VectorAdd_27_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
             var newItem = (global::Windows.UI.Xaml.Style)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_31_Collection(object instance, object item)
+        private void VectorAdd_28_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
             var newItem = (global::Windows.UI.Xaml.Style)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_ObservableCollection(object instance, object item)
+        private void VectorAdd_33_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.HistoryRate>)instance;
+            var newItem = (global::IPM_Proj.HistoryRate)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_34_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.HistoryRate>)instance;
+            var newItem = (global::IPM_Proj.HistoryRate)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_38_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.Rate>)instance;
             var newItem = (global::IPM_Proj.Rate)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_35_Collection(object instance, object item)
+        private void VectorAdd_39_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::IPM_Proj.Rate>)instance;
             var newItem = (global::IPM_Proj.Rate)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_41_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_42_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
 
@@ -383,24 +422,9 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  IPM_Proj.HistoryPage
-                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_HistoryPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGrid
+            case 0:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGrid
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_3_DataGrid;
+                userType.Activator = Activate_0_DataGrid;
                 userType.AddMemberName("ItemsSource");
                 userType.AddMemberName("AlternatingRowBackground");
                 userType.AddMemberName("AlternatingRowForeground");
@@ -447,29 +471,29 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.Controls.Control
+            case 1:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  System.Collections.IEnumerable
+            case 2:   //  System.Collections.IEnumerable
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Media.Brush
+            case 3:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Boolean
+            case 4:   //  Boolean
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Style
+            case 5:   //  Windows.UI.Xaml.Style
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode
+            case 6:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode.None);
                 userType.AddEnumValue("ExcludeHeader", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode.ExcludeHeader);
@@ -477,36 +501,36 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Enum
+            case 7:   //  System.Enum
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 11:   //  System.ValueType
+            case 8:   //  System.ValueType
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 12:   //  Object
+            case 9:   //  Object
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Double
+            case 10:   //  Double
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength
+            case 11:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.CreateFromStringMethod = x => (global::System.Object)global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.ConvertFromString(x);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Int32
+            case 12:   //  Int32
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility
+            case 13:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.None);
                 userType.AddEnumValue("Horizontal", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.Horizontal);
@@ -515,7 +539,7 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility
+            case 14:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.None);
                 userType.AddEnumValue("Column", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.Column);
@@ -524,15 +548,15 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 18:   //  Windows.UI.Xaml.Controls.ScrollBarVisibility
+            case 15:   //  Windows.UI.Xaml.Controls.ScrollBarVisibility
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Windows.UI.Xaml.DataTemplate
+            case 16:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode
+            case 17:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("VisibleWhenSelected", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected);
                 userType.AddEnumValue("Visible", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode.Visible);
@@ -540,28 +564,28 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode
+            case 18:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Extended", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode.Extended);
                 userType.AddEnumValue("Single", global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode.Single);
                 xamlType = userType;
                 break;
 
-            case 22:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>
+            case 19:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>"));
-                userType.CollectionAdd = VectorAdd_22_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_19_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.Collections.ObjectModel.Collection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>
+            case 20:   //  System.Collections.ObjectModel.Collection`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_23_Collection;
-                userType.CollectionAdd = VectorAdd_23_Collection;
+                userType.Activator = Activate_20_Collection;
+                userType.CollectionAdd = VectorAdd_20_Collection;
                 xamlType = userType;
                 break;
 
-            case 24:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn
+            case 21:   //  Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("ActualWidth");
                 userType.AddMemberName("CanUserReorder");
@@ -585,73 +609,118 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  Windows.UI.Xaml.DependencyObject
+            case 22:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Windows.UI.Xaml.Data.Binding
+            case 23:   //  Windows.UI.Xaml.Data.Binding
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  System.Nullable`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>
+            case 24:   //  System.Nullable`1<Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Windows.UI.Xaml.Visibility
+            case 25:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  String
+            case 26:   //  String
                 xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>
+            case 27:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>"));
-                userType.CollectionAdd = VectorAdd_30_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_27_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>
+            case 28:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_31_Collection;
-                userType.CollectionAdd = VectorAdd_31_Collection;
+                userType.Activator = Activate_28_Collection;
+                userType.CollectionAdd = VectorAdd_28_Collection;
                 xamlType = userType;
                 break;
 
-            case 32:   //  System.Collections.IList
+            case 29:   //  System.Collections.IList
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 33:   //  IPM_Proj.MainPage
+            case 30:   //  IPM_Proj.HistoryPage
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_MainPage;
-                userType.AddMemberName("CurrencyCollection");
+                userType.Activator = Activate_30_HistoryPage;
+                userType.AddMemberName("HistoryCurrencyCollection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>
-                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>"));
-                userType.CollectionAdd = VectorAdd_34_ObservableCollection;
+            case 31:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 32:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 33:   //  System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.HistoryRate>
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<IPM_Proj.HistoryRate>"));
+                userType.CollectionAdd = VectorAdd_33_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 35:   //  System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>
+            case 34:   //  System.Collections.ObjectModel.Collection`1<IPM_Proj.HistoryRate>
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_Collection;
-                userType.CollectionAdd = VectorAdd_35_Collection;
+                userType.Activator = Activate_34_Collection;
+                userType.CollectionAdd = VectorAdd_34_Collection;
                 xamlType = userType;
                 break;
 
-            case 36:   //  IPM_Proj.Rate
+            case 35:   //  IPM_Proj.HistoryRate
                 userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_36_Rate;
+                userType.Activator = Activate_35_HistoryRate;
+                userType.AddMemberName("No");
+                userType.AddMemberName("EffectiveDate");
+                userType.AddMemberName("Mid");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Single
+                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 37:   //  IPM_Proj.MainPage
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_37_MainPage;
+                userType.AddMemberName("CurrencyCollection");
+                userType.AddMemberName("LatestDatesCollection");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 38:   //  System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>"));
+                userType.CollectionAdd = VectorAdd_38_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 39:   //  System.Collections.ObjectModel.Collection`1<IPM_Proj.Rate>
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_39_Collection;
+                userType.CollectionAdd = VectorAdd_39_Collection;
+                xamlType = userType;
+                break;
+
+            case 40:   //  IPM_Proj.Rate
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_40_Rate;
                 userType.AddMemberName("Currency");
                 userType.AddMemberName("Code");
                 userType.AddMemberName("Mid");
@@ -659,8 +728,18 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Single
-                xamlType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 41:   //  System.Collections.ObjectModel.ObservableCollection`1<String>
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<String>"));
+                userType.CollectionAdd = VectorAdd_41_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 42:   //  System.Collections.ObjectModel.Collection`1<String>
+                userType = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_42_Collection;
+                userType.CollectionAdd = VectorAdd_42_Collection;
+                xamlType = userType;
                 break;
             }
             return xamlType;
@@ -1306,45 +1385,95 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid)instance;
             return that.SelectedItems;
         }
-        private object get_62_MainPage_CurrencyCollection(object instance)
+        private object get_62_HistoryPage_HistoryCurrencyCollection(object instance)
+        {
+            var that = (global::IPM_Proj.HistoryPage)instance;
+            return that.HistoryCurrencyCollection;
+        }
+        private void set_62_HistoryPage_HistoryCurrencyCollection(object instance, object Value)
+        {
+            var that = (global::IPM_Proj.HistoryPage)instance;
+            that.HistoryCurrencyCollection = (global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.HistoryRate>)Value;
+        }
+        private object get_63_HistoryRate_No(object instance)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            return that.No;
+        }
+        private void set_63_HistoryRate_No(object instance, object Value)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            that.No = (global::System.String)Value;
+        }
+        private object get_64_HistoryRate_EffectiveDate(object instance)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            return that.EffectiveDate;
+        }
+        private void set_64_HistoryRate_EffectiveDate(object instance, object Value)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            that.EffectiveDate = (global::System.String)Value;
+        }
+        private object get_65_HistoryRate_Mid(object instance)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            return that.Mid;
+        }
+        private void set_65_HistoryRate_Mid(object instance, object Value)
+        {
+            var that = (global::IPM_Proj.HistoryRate)instance;
+            that.Mid = (global::System.Single)Value;
+        }
+        private object get_66_MainPage_CurrencyCollection(object instance)
         {
             var that = (global::IPM_Proj.MainPage)instance;
             return that.CurrencyCollection;
         }
-        private void set_62_MainPage_CurrencyCollection(object instance, object Value)
+        private void set_66_MainPage_CurrencyCollection(object instance, object Value)
         {
             var that = (global::IPM_Proj.MainPage)instance;
             that.CurrencyCollection = (global::System.Collections.ObjectModel.ObservableCollection<global::IPM_Proj.Rate>)Value;
         }
-        private object get_63_Rate_Currency(object instance)
+        private object get_67_Rate_Currency(object instance)
         {
             var that = (global::IPM_Proj.Rate)instance;
             return that.Currency;
         }
-        private void set_63_Rate_Currency(object instance, object Value)
+        private void set_67_Rate_Currency(object instance, object Value)
         {
             var that = (global::IPM_Proj.Rate)instance;
             that.Currency = (global::System.String)Value;
         }
-        private object get_64_Rate_Code(object instance)
+        private object get_68_Rate_Code(object instance)
         {
             var that = (global::IPM_Proj.Rate)instance;
             return that.Code;
         }
-        private void set_64_Rate_Code(object instance, object Value)
+        private void set_68_Rate_Code(object instance, object Value)
         {
             var that = (global::IPM_Proj.Rate)instance;
             that.Code = (global::System.String)Value;
         }
-        private object get_65_Rate_Mid(object instance)
+        private object get_69_Rate_Mid(object instance)
         {
             var that = (global::IPM_Proj.Rate)instance;
             return that.Mid;
         }
-        private void set_65_Rate_Mid(object instance, object Value)
+        private void set_69_Rate_Mid(object instance, object Value)
         {
             var that = (global::IPM_Proj.Rate)instance;
             that.Mid = (global::System.Single)Value;
+        }
+        private object get_70_MainPage_LatestDatesCollection(object instance)
+        {
+            var that = (global::IPM_Proj.MainPage)instance;
+            return that.LatestDatesCollection;
+        }
+        private void set_70_MainPage_LatestDatesCollection(object instance, object Value)
+        {
+            var that = (global::IPM_Proj.MainPage)instance;
+            that.LatestDatesCollection = (global::System.Collections.ObjectModel.ObservableCollection<global::System.String>)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -1764,29 +1893,59 @@ namespace IPM_Proj.IPM_Proj_XamlTypeInfo
                 xamlMember.Getter = get_61_DataGrid_SelectedItems;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "IPM_Proj.HistoryPage.HistoryCurrencyCollection":
+                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.HistoryPage");
+                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "HistoryCurrencyCollection", "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.HistoryRate>");
+                xamlMember.Getter = get_62_HistoryPage_HistoryCurrencyCollection;
+                xamlMember.Setter = set_62_HistoryPage_HistoryCurrencyCollection;
+                break;
+            case "IPM_Proj.HistoryRate.No":
+                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.HistoryRate");
+                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "No", "String");
+                xamlMember.Getter = get_63_HistoryRate_No;
+                xamlMember.Setter = set_63_HistoryRate_No;
+                break;
+            case "IPM_Proj.HistoryRate.EffectiveDate":
+                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.HistoryRate");
+                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "EffectiveDate", "String");
+                xamlMember.Getter = get_64_HistoryRate_EffectiveDate;
+                xamlMember.Setter = set_64_HistoryRate_EffectiveDate;
+                break;
+            case "IPM_Proj.HistoryRate.Mid":
+                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.HistoryRate");
+                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Mid", "Single");
+                xamlMember.Getter = get_65_HistoryRate_Mid;
+                xamlMember.Setter = set_65_HistoryRate_Mid;
+                break;
             case "IPM_Proj.MainPage.CurrencyCollection":
                 userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.MainPage");
                 xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "CurrencyCollection", "System.Collections.ObjectModel.ObservableCollection`1<IPM_Proj.Rate>");
-                xamlMember.Getter = get_62_MainPage_CurrencyCollection;
-                xamlMember.Setter = set_62_MainPage_CurrencyCollection;
+                xamlMember.Getter = get_66_MainPage_CurrencyCollection;
+                xamlMember.Setter = set_66_MainPage_CurrencyCollection;
                 break;
             case "IPM_Proj.Rate.Currency":
                 userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
                 xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Currency", "String");
-                xamlMember.Getter = get_63_Rate_Currency;
-                xamlMember.Setter = set_63_Rate_Currency;
+                xamlMember.Getter = get_67_Rate_Currency;
+                xamlMember.Setter = set_67_Rate_Currency;
                 break;
             case "IPM_Proj.Rate.Code":
                 userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
                 xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Code", "String");
-                xamlMember.Getter = get_64_Rate_Code;
-                xamlMember.Setter = set_64_Rate_Code;
+                xamlMember.Getter = get_68_Rate_Code;
+                xamlMember.Setter = set_68_Rate_Code;
                 break;
             case "IPM_Proj.Rate.Mid":
                 userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.Rate");
                 xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "Mid", "Single");
-                xamlMember.Getter = get_65_Rate_Mid;
-                xamlMember.Setter = set_65_Rate_Mid;
+                xamlMember.Getter = get_69_Rate_Mid;
+                xamlMember.Setter = set_69_Rate_Mid;
+                break;
+            case "IPM_Proj.MainPage.LatestDatesCollection":
+                userType = (global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlUserType)GetXamlTypeByName("IPM_Proj.MainPage");
+                xamlMember = new global::IPM_Proj.IPM_Proj_XamlTypeInfo.XamlMember(this, "LatestDatesCollection", "System.Collections.ObjectModel.ObservableCollection`1<String>");
+                xamlMember.Getter = get_70_MainPage_LatestDatesCollection;
+                xamlMember.Setter = set_70_MainPage_LatestDatesCollection;
                 break;
             }
             return xamlMember;

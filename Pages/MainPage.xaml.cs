@@ -33,20 +33,30 @@ namespace IPM_Proj
 
         public ObservableCollection<Rate> CurrencyCollection { get => RatesViewModel.CurrencyRates(); set => currencyCollection = value; }
 
+        private ObservableCollection<string> latestDatesCollection;
+
+        public ObservableCollection<string> LatestDatesCollection { get => LatestDatesViewModel.DateCurrencyRates(); set => latestDatesCollection = value; }
+
         public MainPage()
         {
             this.InitializeComponent();
             //currencyGridUWP;
             currencyGridUWP.SelectedItem = null;
             currencyGridUWP.SelectionChanged += currencyGridUWP_CellSelected;
+            lastDatesListViewUWP.SelectionChanged += lastDatesListViewUWP_CellSelected;
         }
 
 
         private void currencyGridUWP_CellSelected(object sender, SelectionChangedEventArgs e)
         {
-            Debug.Write(((Rate)e.AddedItems[0]).Currency);
+            //Debug.Write(((Rate)e.AddedItems[0]).Currency);
             this.Frame.Navigate(typeof(HistoryPage), ((Rate)e.AddedItems[0]));
         }
 
+        private void lastDatesListViewUWP_CellSelected(object sender, SelectionChangedEventArgs e)
+        {
+            Debug.Write(e.ToString());
+            //this.Frame.Navigate(typeof(HistoryPage), ((Rate)e.AddedItems[0]));
+        }
     }
 }

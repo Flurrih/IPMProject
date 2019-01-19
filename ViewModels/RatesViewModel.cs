@@ -18,13 +18,11 @@ namespace IPM_Proj
 
     public class RatesViewModel
     {
+        static ObservableCollection<Rate> currencyCollection = new ObservableCollection<Rate>();
+
         public RatesViewModel()
         {
         }
-
-        private static ObservableCollection<Rate> currencyCollection;
-
-        public static ObservableCollection<Rate> CurrencyCollection { get => CurrencyRates(); set => currencyCollection = value; }
 
         public static string GetPageData(string link)
         {
@@ -57,13 +55,21 @@ namespace IPM_Proj
             return rates;
         }
 
+        public static void UpdateCurrencies(ObservableCollection<Rate> rates)
+        {
+            currencyCollection = rates;
+        }
+
         public static ObservableCollection<Rate> CurrencyRates()
         {
-            ObservableCollection<Rate> currencyCollection = new ObservableCollection<Rate>();
-            foreach (var item in getAllCurrencies())
+            if(currencyCollection.Count <= 0)
             {
-                currencyCollection.Add(item);
+                foreach (var item in getAllCurrencies())
+                {
+                    currencyCollection.Add(item);
+                }
             }
+
             return currencyCollection;
         }
     }

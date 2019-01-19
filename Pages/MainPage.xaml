@@ -10,11 +10,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
 
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
         <Grid Margin="10,10,10,10">
             <Custom:DataGrid x:Name="currencyGridUWP"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="782" Width="562" ItemsSource="{x:Bind CurrencyCollection}"/>
         </Grid>
+        <ListView x:Name="lastDatesListViewUWP" Grid.Column="1" HorizontalAlignment="Left" Height="746" Margin="192,221,0,0" VerticalAlignment="Top" Width="440" ItemsSource="{x:Bind LatestDatesCollection}"/>
 
     </Grid>
 </Page>
