@@ -37,6 +37,8 @@ namespace IPM_Proj
 
         public ObservableCollection<string> LatestDatesCollection { get => LatestDatesViewModel.DateCurrencyRates(); set => latestDatesCollection = value; }
 
+        string currentlySelectedDate;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -55,7 +57,10 @@ namespace IPM_Proj
 
         private void lastDatesListViewUWP_CellSelected(object sender, SelectionChangedEventArgs e)
         {
-            Debug.Write(e.ToString());
+            currentlySelectedDate = (string)e.AddedItems[0];
+            RatesViewModel.UpdateCurrencies(currentlySelectedDate);
+            currencyGridUWP.ItemsSource = null;
+            currencyGridUWP.ItemsSource = RatesViewModel.CurrencyRates();
             //this.Frame.Navigate(typeof(HistoryPage), ((Rate)e.AddedItems[0]));
         }
     }

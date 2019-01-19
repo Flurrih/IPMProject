@@ -55,9 +55,37 @@ namespace IPM_Proj
             return rates;
         }
 
+        public static IEnumerable<Rate> getAllCurrencies(string date)
+        {
+            string nbp = "http://api.nbp.pl/api/exchangerates/tables/A/" + date + "/?format=xml";
+            string xml = GetPageData(nbp);
+
+            XDocument doc = XDocument.Parse(xml);
+            IEnumerable<Rate> rates = from r in
+                                       doc.Descendants("Rate")
+                                      select new Rate()
+                                      {
+                                          Currency = (string)r.Element("Currency"),
+                                          Code = (string)r.Element("Code"),
+                                          Mid = (float)r.Element("Mid")
+                                      };
+
+            return rates;
+        }
+
         public static void UpdateCurrencies(ObservableCollection<Rate> rates)
         {
             currencyCollection = rates;
+        }
+
+        public static void UpdateCurrencies(string date)
+        {
+            currencyCollection.Clear();
+
+            foreach (var item in getAllCurrencies(date))
+            {
+                currencyCollection.Add(item);
+            }
         }
 
         public static ObservableCollection<Rate> CurrencyRates()
